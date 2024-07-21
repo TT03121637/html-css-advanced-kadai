@@ -1,4 +1,8 @@
 /*PC,スマホ共通スタイル*/
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN, Meiryo, Arial, sans-serif";
     max-width: 1080px;
@@ -10,6 +14,7 @@ p {
     font-size: 15px;
 }
 
+/*ヘッダー*/
 header {
     display: flex;
     justify-content: space-between;
@@ -40,3 +45,40 @@ header {
     text-decoration: underline;
 }
 
+/*メインビジュアル*/
+#main-visual {
+    position: relative;
+    height: 470px;
+}
+
+#main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #2710d5;
+    color: #ffffff;
+    border-radius: 0 0 476px 0;
+    max-width: 620px;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+}
+
+#main-message> h1 {
+    font-size: 60px;
+    margin: 100px 0 0 50px;
+}
+
+#main-message> p {
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+
+#main-visual >img {
+    max-width: 620px;
+    border-radius: 476px 0 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
